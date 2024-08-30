@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Ayesha Syed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/as2.webp" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="logo">Portfolio.</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about-me">
+        <div class="container">
+            <div class="about-img">
+                <img src="im2.jpg" alt="Image">
+            </div>
+            <div class="about-content">
+                <h1>About <span>Me</span></h1>
+                <h2>Computer Science Student</h2>
+                <p>
+
+                    Hi, I'm Syeda Ayesha Mehmoodi, a passionate Computer Science student with a keen interest in software development and web technologies. My journey in tech began with a curiosity about how things work behind the scenes on the web, and this has driven me to learn and grow in the field.
+                    
+                    I'm currently pursuing my degree in Computer Science at Iqra university, where I've developed a strong foundation in programming, algorithms, and software design. 
+                    .</p>
+                <a href="javascript:void(0);" class="btn" onclick="toggleReadMore()">Read More</a>
+
+<div id="moreContent" style="display:none;">
+    <!-- Additional content goes here -->
+    <p>I’ve also worked on several personal projects and internships that have allowed me to apply my skills in real-world scenarios.
+                    
+        My technical skills include proficiency in Java, Python, HTML/CSS, JavaScript,C.I’m continually expanding my knowledge in areas like machine learning and cloud computing.
+        
+        My goal is to become a full-stack developer, with a particular focus on creating intuitive and efficient web applications. I’m eager to contribute to innovative projects and collaborate with teams that are as passionate about technology as I am.
+        
+        When I'm not coding, I enjoy reading books, exploring new things.
+        
+        Feel free to explore my portfolio to see some of my work, and don't hesitate to connect with me on LinkedIn or reach out via email if you'd like to collaborate or chat about tech!.</p>
+</div>
+
+<script>
+    function toggleReadMore() {
+        var moreContent = document.getElementById("moreContent");
+        if (moreContent.style.display === "none") {
+            moreContent.style.display = "block";
+        } else {
+            moreContent.style.display = "none";
+        }
+    }
+</script>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>
