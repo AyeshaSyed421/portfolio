@@ -18,7 +18,7 @@ header {
 }
 
 .logo {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
     color: #0ef;
 }
@@ -32,7 +32,7 @@ nav ul {
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
 }
 
@@ -46,7 +46,6 @@ nav ul li a::after {
     width: 0;
     height: 2px;
     display: block;
-    font-weight: bold;
     margin-top: 5px;
     background: #0ef;
     transition: width 0.3s;
@@ -122,9 +121,9 @@ nav ul li a:hover::after {
     border-radius: 50px;
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     animation: fadeInUp 2s ease-in-out;
-    box-shadow: none !important;  /* Remove box shadow */
-    text-shadow: none !important;  /* Remove text shadow */
-    outline: none !important;      /* Remove outline */
+    box-shadow: none !important;  
+    text-shadow: none !important;  
+    outline: none !important;     
 }
 
 
@@ -134,9 +133,9 @@ nav ul li a:hover::after {
     text-shadow: 0 0 10px #0ac, 0 0 20px #0ac, 0 0 30px #0ac;
 }
 
-/* Add icon before text in the button */
+
 .btn:before {
-    content: '\f019'; /* FontAwesome download icon */
+    content: '\f019'; 
     font-family: FontAwesome;
     margin-right: 10px;
 }
@@ -149,7 +148,7 @@ nav ul li a:hover::after {
 .home-image img {
     
     max-width: 100%;
-    width: 600px; /* Adjust width for a larger size */
+    width: 600px; 
     height: 400px;
     border-radius: 7px;
     border: 3px solid #0ef;
@@ -158,7 +157,7 @@ nav ul li a:hover::after {
     
 }
 
-/* Animations */
+
 @keyframes slideInTop {
     0% {
         transform: translateY(-100%);
@@ -227,60 +226,8 @@ nav ul li a:hover::after {
 
 
 
-/* General Styles */
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
-    color: #fff;
-}
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 50px;
-    background-color: #1a1a1a;
-}
 
-.logo {
-    font-size: 26px;
-    font-weight: bold;
-    color: #0ef;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-}
-
-nav ul li a:hover {
-    color: #0ef;
-}
-
-nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    display: block;
-    margin-top: 5px;
-    background: #0ef;
-    transition: width 0.3s;
-}
-
-nav ul li a:hover::after {
-    width: 100%;
-}
 
 /* About Me Section */
 .about-me {
@@ -394,12 +341,12 @@ nav ul li a:hover::after {
 
 .services-container {
     display: flex;
-    justify-content: space-around; /* Space around the cards */
-    align-items: stretch; /* Ensure all cards have the same height */
-    gap: 20px; /* Adds space between the cards */
+    justify-content: space-around; 
+    align-items: stretch; 
+    gap: 20px; 
     padding: 20px;
-    max-width: 1200px; /* Set a maximum width for the container */
-    margin: 0 auto; /* Centers the container horizontally */
+    max-width: 1200px; 
+    margin: 0 auto; 
 }
 
 .service-card {
@@ -407,7 +354,7 @@ nav ul li a:hover::after {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    width: 30%; /* Adjust width to ensure three cards fit in one row */
+    width: 30%; 
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -446,15 +393,15 @@ nav ul li a:hover::after {
 .service-card .btn:hover {
     background-color: #0ac;
 }
-/* Media query for responsiveness */
+
 @media (max-width: 768px) {
     .services-container {
-        flex-direction: column; /* Stack cards vertically on smaller screens */
+        flex-direction: column; 
     }
 
     .service-card {
-        width: 100%; /* Full width for smaller screens */
-        margin-bottom: 20px; /* Adds space between stacked cards */
+        width: 100%; 
+        margin-bottom: 20px; 
     }
 }
 .more-info {
@@ -473,72 +420,71 @@ nav ul li a:hover::after {
     background-color: #0ac;
 }
 
-
+/* contact me Section */
 .contact-form {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
     gap: 50px; 
     align-items: start; }
 
-/* Styling for textarea in the contact form */
+
 .contact-form textarea {
-    grid-column: 1 / span 2; /* Full width of the grid */
-    height: 100px; /* Fixed height */
-    resize: none; /* Disable resizing */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Shadow effect */
-    background-color: #2c2f36; /* Darker grey background similar to container */
-    border: 2px solid #2c2f36; /* Match border with background */
-    margin: 5px 0; /* Reduced vertical margin */
+    grid-column: 1 / span 2; 
+    height: 100px; 
+    resize: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+    background-color: #2c2f36; 
+    border: 2px solid #2c2f36; 
+    margin: 5px 0; 
 }
 
-/* Styling for input fields and textarea */
+
 .contact-form input, .contact-form textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Padding inside fields */
-    margin: 0px; /* No extra margin */
-    border: 10px solid #2c2f36; /* Dark grey border similar to background */
-    border-radius: 10px; /* Broader curves for inputs */
-    background-color: #2c2f36; /* Darker grey background similar to container */
-    color: #ffffff; /* White text color */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Shadow effect */
+    width: 100%; 
+    padding: 12px; 
+    margin: 0px; 
+    border: 10px solid #2c2f36; 
+    border-radius: 10px; 
+    background-color: #2c2f36; 
+    color: #ffffff; 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
 }
 
-/* Styling for submit button */
+
 .contact-form button {
-    background-color: #0ef; /* Neon blue background */
-    color: #1a1a2e; /* Dark text color */
-    padding: 10px 20px; /* Padding inside button */
-    border-radius: 50px; /* Fully rounded button */
-    border: none; /* Remove border */
-    text-decoration: none; /* Remove underline */
-    font-size: 17px; /* Font size */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s; /* Smooth color transition */
-    grid-column: 1 / span 2; /* Span across both columns */
-    justify-self: center; /* Center button horizontally within its cell */
-    margin: 20px 0; /* Space above and below button */
-}
+    background-color: #0ef; 
+    color: #1a1a2e; 
+    padding: 10px 20px; 
+    border-radius: 50px; 
+    border: none; 
+    text-decoration: none; 
+    font-size: 17px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    grid-column: 1 / span 2; 
+    justify-self: center; 
+    margin: 20px 0; 
 
-/* Hover effect for the submit button */
+}
 .contact-form button:hover {
-    background-color: #0ac; /* Pink background on hover */
+    background-color: #0ac; 
+
 }
 
-/* Styling for the contact container */
+
 .contact-container {
-    max-width: 600px; /* Maximum width */
-    margin: 50px auto; /* Centered container */
-    padding: 20px; /* Padding inside container */
-    background-color: #1a1a1a; /* Dark background color */
-    border-radius: 15px; /* Broader curves for container */
-    position: relative; /* For pseudo-element positioning */
-    color: #ffffff; /* White text color */
-}
+    max-width: 600px; 
+    margin: 50px auto; 
+    padding: 20px; 
+    background-color: #1a1a1a; 
+    border-radius: 15px; 
+    position: relative; 
+    color: #ffffff; }
 
-/* Header styling in the contact container */
+
 .contact-container h2 {
-    text-align: center; /* Center align header text */
-    margin-bottom: 20px; /* Space below header */
+    text-align: center; 
+    margin-bottom: 20px; 
     color: #0ef;
     font-size: 38px;
     margin: 10px 0;
@@ -546,14 +492,245 @@ nav ul li a:hover::after {
     
 }
 
-/* Pseudo-element for a color band under the form */
+
 .contact-container::after {
-    content: ''; /* Empty content */
-    display: block; /* Block display */
-    height: 1px; /* Thin line height */
-    background-color: #1a1a2e; /* Dark color under the form */
-    position: absolute; /* Absolute positioning */
-    bottom: 0; /* Position at the bottom */
-    left: 0; /* Align with the left edge */
-    width: 100%; /* Full width */
+    content: ''; 
+    display: block; 
+    background-color: #1a1a2e; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+}
+
+/*portfolio Section */
+
+.portfolio-section {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    font-size: 46px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 40px;
+    
+}
+
+.portfolio-section h2 span {
+    color: #0ef;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Card Styles */
+.card {
+    position: relative;
+    width: 330px;
+    height: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #2e2e2e;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card:hover img {
+    opacity: 0.2;
+}
+
+.card-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.card:hover .card-content {
+    opacity: 1;
+}
+
+.card h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.card {
+    position: relative;
+    
+}
+
+
+.circular-button {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    position: absolute;
+    bottom: 20px; 
+    left: 50%; 
+    transform: translateX(-50%) translateY(20%); 
+}
+
+.circular-button i {
+    font-size: 20px;
+    color: #fff;
+}
+
+.card:hover .circular-button {
+    background-color: #0ef;
+    color: #fff;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    h1 {
+        font-size: 4vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    .hero h1 {
+        font-size: 5vw;
+    }
+
+    .hero p {
+        font-size: 3.2vw;
+    }
+
+    .card h2 {
+        font-size: 2.4vw;
+    }
+
+    .card p {
+        font-size: 2.2vw;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    .hero h1 {
+        font-size: 7vw;
+    }
+
+    .hero p {
+        font-size: 4vw;
+    }
+
+    .card h2 {
+        font-size: 3.2vw;
+    }
+
+    .card p {
+        font-size: 3vw;
+    }
+
+    nav ul {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 4.5vw;
+    }
+
+    .hero h1 {
+        font-size: 8vw;
+    }
+
+    .hero p {
+        font-size: 5vw;
+    }
+
+    .card h2 {
+        font-size: 3.6vw;
+    }
+
+    .card p {
+        font-size: 3.4vw;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
 }
