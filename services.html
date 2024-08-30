@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Ayesha Syed</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/as2.webp" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Portfolio.</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services" class="services-section">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <i class="fas fa-code"></i>
+                <h3>Web Development</h3>
+                <p class="short-desc">Tailor-made websites designed for performance and scalability, using the latest technologies to meet your unique needs.</p>
+                <button class="btn" onclick="toggleContent('web-dev')">Read More</button>
+                <div id="web-dev" class="more-info">
+                    <p>Discover how my custom web solutions can enhance your online presence. From responsive designs to complex functionalities, I build websites that are both visually appealing and user-friendly. Learn about my approach, technologies used, and see examples of my past projects.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-pencil-ruler"></i>
+                <h3>Graphic Design</h3>
+                <p class="short-desc">Eye-catching graphics and branding materials crafted to effectively communicate your brand’s message and engage your audience.</p>
+                <button class="btn" onclick="toggleContent('graphic-design')">Read More</button>
+                <div id="graphic-design" class="more-info">
+                    <p>Explore my creative graphic design services, including logo creation, branding, and promotional materials. My designs are tailored to reflect your brand’s identity and resonate with your audience. Check out my portfolio for a glimpse of my design style and expertise.</p>
+                </div>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-chart-line"></i>
+                <h3>Digital Marketing</h3>
+                <p class="short-desc">Data-driven digital marketing strategies to boost your online presence, drive traffic, and convert leads into customers.</p>
+                <button class="btn" onclick="toggleContent('digital-marketing')">Read More</button>
+                <div id="digital-marketing" class="more-info">
+                    <p>Find out how my strategic digital marketing services can drive growth for your business. Whether it’s SEO, social media marketing, or targeted ad campaigns, I deliver solutions that help you reach your goals and achieve measurable results. Read more about my strategies and success stories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
