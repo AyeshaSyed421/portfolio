@@ -71,7 +71,7 @@ nav ul li a:hover::after {
 .home-content h1 {
     font-size: 36px;
     margin: 20px 0;
-    font-weight: bold;
+    
 }
 
 .home-content h2 {
@@ -85,7 +85,7 @@ nav ul li a:hover::after {
 .home-content p1 {
     font-size: 30px;
     margin: 20px 0;
-    font-weight: bold;
+    
     
 }
 .home-content p {
@@ -148,12 +148,11 @@ nav ul li a:hover::after {
 .home-image img {
     
     max-width: 100%;
-    width: 600px; 
-    height: 400px;
-    border-radius: 7px;
-    border: 3px solid #0ef;
+    width: 400x; 
+    height: 450px;
+    
     padding: 5px;
-    animation: pulse 3s infinite;
+   
     
 }
 
@@ -264,11 +263,6 @@ nav ul li a:hover::after {
     font-size: 40px;
     margin: 20px 0;
     font-weight: bold;
-    .poppins-regular {
-        font-family: "Poppins", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-      }
 }
 
 .about-content h1 span {
@@ -276,15 +270,14 @@ nav ul li a:hover::after {
 }
 
 .about-content h2 {
-    font-size: 38px;
-    margin: 10px 0;
+   font-size: 30px;
+    margin: 20px 0;
     color: #0ef;
-    font-weight: bold;
     
 }
 
 .about-content p {
-    font-size: 17px;
+    font-size: 16px;
     margin: 20px 0;
 }
 
@@ -617,7 +610,123 @@ nav ul li a:hover::after {
     color: #fff;
 }
 
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 20px;
+    }
 
+    h1 {
+        font-size: 4vw;
+    }
+
+    p {
+        font-size: 3vw;
+    }
+
+    .hero h1 {
+        font-size: 5vw;
+    }
+
+    .hero p {
+        font-size: 3.2vw;
+    }
+
+    .card h2 {
+        font-size: 2.4vw;
+    }
+
+    .card p {
+        font-size: 2.2vw;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 5vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    .hero h1 {
+        font-size: 7vw;
+    }
+
+    .hero p {
+        font-size: 4vw;
+    }
+
+    .card h2 {
+        font-size: 3.2vw;
+    }
+
+    .card p {
+        font-size: 3vw;
+    }
+
+    nav ul {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    p {
+        font-size: 4.5vw;
+    }
+
+    .hero h1 {
+        font-size: 8vw;
+    }
+
+    .hero p {
+        font-size: 5vw;
+    }
+
+    .card h2 {
+        font-size: 3.6vw;
+    }
+
+    .card p {
+        font-size: 3.4vw;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}
 
 
 
