@@ -420,7 +420,7 @@ nav ul li a:hover::after {
     background-color: #0ac;
 }
 
-/* contact me Section */
+
 .contact-form {
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -503,7 +503,7 @@ nav ul li a:hover::after {
     width: 100%; 
 }
 
-/*portfolio Section */
+
 
 .portfolio-section {
     padding: 10px 0;
@@ -732,5 +732,99 @@ nav ul li a:hover::after {
 
     .card {
         max-width: 100%;
+    }
+}
+
+
+
+/* Mobile Styles for Home and About Pages */
+
+/* Home Section */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column; /* Stack home content and image vertically */
+        padding: 20px; /* Reduce padding for mobile */
+        text-align: center; /* Center-align content */
+    }
+
+    .home-content {
+        max-width: 100%; /* Allow content to take full width */
+        margin-bottom: 20px; /* Spacing below content */
+    }
+
+    .home-content h1 {
+        font-size: 5vw; /* Adjust font size for headers */
+    }
+
+    .home-content h2 {
+        font-size: 6vw; /* Adjust font size for sub-headers */
+    }
+
+    .home-content p {
+        font-size: 4vw; /* Adjust font size for paragraphs */
+    }
+
+    .home-image {
+        width: 100%; /* Full width image */
+        height: auto; /* Maintain aspect ratio */
+    }
+}
+
+/* About Me Section */
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column; /* Stack content vertically */
+        padding: 20px; /* Reduce padding for mobile */
+        text-align: center; /* Center-align content */
+    }
+
+    .about-img img {
+        max-width: 100%; /* Ensure image scales down */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px; /* Spacing below image */
+    }
+
+    .about-content {
+        max-width: 100%; /* Allow content to take full width */
+    }
+
+    .about-content h1 {
+        font-size: 4.5vw; /* Adjust font size for headers */
+    }
+
+    .about-content h2 {
+        font-size: 4vw; /* Adjust font size for sub-headers */
+    }
+
+    .about-content p {
+        font-size: 3.5vw; /* Adjust font size for paragraphs */
+    }
+}
+
+
+/* Responsive Font Sizes */
+@media (max-width: 576px) {
+    .home-content h1 {
+        font-size: 6vw; /* Larger font size adjustments for very small screens */
+    }
+
+    .home-content h2 {
+        font-size: 7vw; /* Larger font size adjustments */
+    }
+
+    .home-content p {
+        font-size: 5vw; /* Larger font size adjustments */
+    }
+
+    .about-content h1 {
+        font-size: 5vw; /* Larger font size adjustments for very small screens */
+    }
+
+    .about-content h2 {
+        font-size: 5vw; /* Larger font size adjustments */
+    }
+
+    .about-content p {
+        font-size: 4.5vw; /* Larger font size adjustments */
     }
 }
